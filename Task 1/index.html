@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Responsive Image Gallery</title>
+
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<h1>Responsive Image Gallery</h1>
+
+<div class="buttons">
+    <button onclick="filterGallery('all')">All</button>
+    <button onclick="filterGallery('nature')">Nature</button>
+    <button onclick="filterGallery('city')">City</button>
+    <button onclick="filterGallery('animal')">Animals</button>
+</div>
+
+<div class="gallery">
+
+<div class="card nature">
+<img loading="lazy" src="images/nature1.jpg" alt="Beautiful Nature" onclick="openImage(this)">
+<p>Beautiful Nature</p>
+</div>
+
+<div class="card city">
+<img loading="lazy" src="images/city1.jpg" alt="Modern City" onclick="openImage(this)">
+<p>Modern City</p>
+</div>
+
+<div class="card animal">
+<img loading="lazy" src="images/animal1.jpg" alt="Cute Animal" onclick="openImage(this)">
+<p>Cute Animal</p>
+</div>
+
+<div class="card nature">
+<img loading="lazy" src="images/nature2.jpg" alt="Mountains" onclick="openImage(this)">
+<p>Mountains</p>
+</div>
+
+<div class="card city">
+<img loading="lazy" src="images/city2.jpg" alt="Night City" onclick="openImage(this)">
+<p>Night City</p>
+</div>
+
+<div class="card animal">
+<img loading="lazy" src="images/animal2.jpg" alt="Wild Animal" onclick="openImage(this)">
+<p>Wild Animal</p>
+</div>
+
+</div>
+
+<div id="lightbox">
+
+<span id="close">&times;</span>
+
+<button id="prev">&#10094;</button>
+
+<div class="lightbox-content">
+<img id="lightImg">
+<h3 id="caption"></h3>
+</div>
+
+<button id="next">&#10095;</button>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
